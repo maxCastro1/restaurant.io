@@ -9,7 +9,7 @@
     --font-size-normal:1rem;
     --font-size-big:1.5rem;
     --font-size-bigger:3rem;
-    --header-height:15vh;
+    --header-height:10vh;
     
 }
 html{
@@ -23,7 +23,9 @@ html{
 a{
     text-decoration: none;
 }
-a:visited{
+a:visited,
+a:link 
+  {
     color: var(--text-color);
 }
 body{
@@ -469,6 +471,44 @@ height: max-content;
 }
 .order-cont-right form > button {
     margin-top: 2rem;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    padding-block: 2rem ;
+    border-top: solid 1px var( --light-back-groung-color) ;
+    box-shadow: 0px 6px 18px 0px rgba(167,118,59,0.31);
+    -webkit-box-shadow: 0px 6px 18px 0px rgba(167,118,59,0.31);
+    -moz-box-shadow: 0px 6px 18px 0px rgba(167,118,59,0.31);
+}
+.footer-bottom-left{
+    position: absolute;
+    bottom:1rem ;
+    left: 1rem;
+}
+.footer-bottom-right{
+    position: absolute;
+    bottom:1rem;
+    right: 1rem;
+}
+.footer-div{
+    padding-inline:2rem;
+    padding-top: 2rem;
+    padding-bottom:4rem ;
+    gap:3rem;
+}
+
+footer h5 {
+    margin-top: 1rem;
+}
+footer a:hover {
+   color:#f38d12;
+}
+.footer-div a > img{
+    width: 30px ;
+    
 }
 
 @media screen and (min-width: 882px){
